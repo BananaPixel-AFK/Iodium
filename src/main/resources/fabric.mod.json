@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "iodium",
+  "version": "${version}",
+  "name": "Iodium",
+  "description": "Client-side stutter diagnostics and lightweight performance helpers for Fabric. Adds an Iodium page to Sodium's video settings.",
+  "authors": [
+    "Mods-Iodium"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/iodium/textures/gui/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.iodium.IodiumClient"
+    ],
+    "sodium:config_api_user": [
+      "dev.iodium.IodiumSodiumConfig"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "sodium": ">=0.8.0"
+  }
+}
